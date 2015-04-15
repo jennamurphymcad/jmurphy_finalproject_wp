@@ -11,11 +11,14 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'srazhalys' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'srazhalys' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'srazhalys' ), 'srazhalys', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
+		
+		  	<ul>
+            	<li><a href="https://www.facebook.com/Srazhalys">Facebook</a></li>
+            	<li><a href="http://www.reverbnation.com/srazhalys">Reverbnation</a></li>
+            	<li><a href="https://www.youtube.com/user/JCReinemann/videos">YouTube</a></li>
+            </ul>
+               <h3>&copy; Srazhalys 2014</h3>
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
