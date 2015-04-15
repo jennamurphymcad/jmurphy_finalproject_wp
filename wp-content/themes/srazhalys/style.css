@@ -341,6 +341,13 @@ big {
 	font-size: 125%;
 }
 
+h1, h1 a, h1 a:active, h1 a:hover, h1 a:visited {
+	color: #7CAE89;
+	text-decoration: none;	
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
 h1, h2, h3, h4 {
 	font-family: 'Comfortaa', sans-serif;
 }
@@ -348,12 +355,13 @@ h1, h2, h3, h4 {
 body {
 	font-family: 'Raleway', sans-serif;
 	color: #2f2f2f;
-	background-color: #ecebe6;
 }
+
 
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+
 html {
 	box-sizing: border-box;
 	
@@ -366,7 +374,7 @@ html {
 }
 
 body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+	background: #ecebe6; 
 }
 
 blockquote:before,
@@ -390,7 +398,7 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+
 }
 
 ul {
@@ -425,6 +433,64 @@ table {
 	width: 100%;
 }
 
+#masthead img {
+	height: 60px;
+	width: 50px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	float: left;
+}
+
+#masthead h1 {
+	max-width: 20%;
+	float: left;
+	padding-left: 100px;
+}
+
+#masthead {
+	background-color: #FFF;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	z-index: 9999px;
+}
+
+.main-navigation {
+	float: right;
+	max-width: 75%
+	z-index: 999;
+	font-family: 'Comfortaa', sans-serif;
+	font-weight: 500;
+}
+
+footer {
+	background: #fff;
+	padding: 1em;
+}
+footer img {
+width: 25%;
+
+}
+
+.site-content {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+footer ul {
+	list-style: none;
+	max-width: 100%;
+	padding-left: 350px;
+	position: relative;
+	
+}
+
+footer li {
+	float:left;
+	max-width: 33.3%;
+	text-align: center;
+}
+
+footer h3 {
+	text-align: center;
+}
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -531,11 +597,14 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+	float: right;
+	max-width: 75%
+	font-family: 'Comfortaa', sans-serif;
+	font-weight: 400;
+	font-size: .8em;
+	margin: 10px 120px 0px 0px;
 }
+
 
 .main-navigation ul {
 	display: none;
@@ -547,9 +616,11 @@ a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
+	padding: 1.8em;
 }
 
 .main-navigation a {
+	color: #2f2f2f;
 	display: block;
 	text-decoration: none;
 }
@@ -558,7 +629,7 @@ a:active {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
-	top: 1.5em;
+	top: 1.4em;
 	left: -999em;
 	z-index: 99999;
 }
@@ -578,23 +649,31 @@ a:active {
 
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
+	color: #28767a;
 }
 
 .main-navigation ul ul :hover > a,
 .main-navigation ul ul .focus > a {
+	color: #28767a;
+	z-index: 9999px;
+	
 }
 
 .main-navigation ul ul a:hover,
 .main-navigation ul ul a.focus {
+	background-color: #fff;
 }
 
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
+	background-color: #fff;
+	margin-top: 30px;
 	left: auto;
 }
 
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
+	background-color: #fff;
 	left: 100%;
 }
 
