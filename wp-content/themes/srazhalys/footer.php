@@ -7,9 +7,7 @@
  * @package srazhalys
  */
 ?>
-
-	</div><!-- #content -->
-
+ <div> <!-- content-->
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		
 		  	<ul>
@@ -20,8 +18,7 @@
                <h3>&copy; Srazhalys 2014</h3>
 
 	</footer><!-- #colophon -->
-</div><!-- #page -->
-
+</div> <!--content-->
 <?php wp_footer(); ?>
 
 </body>
