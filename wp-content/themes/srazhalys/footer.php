@@ -18,6 +18,11 @@
                <h3>&copy; Srazhalys 2014</h3>
 
 	</footer><!-- #colophon -->
+	
+	<div id="bandcamp":>
+	<iframe style="border: 0; width: 250px; height: 120px;" src="http://bandcamp.com/EmbeddedPlayer/album=3170733593/size=large/bgcol=ffffff/linkcol=7cae89/tracklist=false/artwork=none/transparent=true/" seamless><a href="http://srazhalys.bandcamp.com/album/srazhalys">Srazhalys by Srazhalys</a></iframe>
+	</div>
+
 </div> <!--content-->
 <?php wp_footer(); ?>
 
