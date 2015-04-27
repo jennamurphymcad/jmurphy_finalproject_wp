@@ -141,6 +141,8 @@ function create_my_post_types() {
 
 add_action( 'widgets_init', 'srazhalys_widgets_init' );
 
+
+
 /**
  * Enqueue scripts and styles.
  */
