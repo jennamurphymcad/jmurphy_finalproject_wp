@@ -357,9 +357,57 @@ body {
 	color: #2f2f2f;
 }
 
+.main #intro {
+	padding: 100px 200px; 
+	color: #2f2f2f;
+	margin-top: -5px;
+}
+.main #intro h3 {
+	color: #2f2f2f;
+	text-align: center;
+}
+
+.main h4 {
+	font-size: 1.5em;
+	text-align: Center;
+}
+
+.main h3 {
+	font-size: 2em;
+	
+}
+
+footer h3 {
+	text-align: center;
+	font-size: 1.4em;
+}
+
+.main figcaption p, .main figcaption ol {
+	font-size: 1.4em;
+	
+}
+
+.main figcaption h2 {
+	text-align: left;
+	font-size: 3.5em;
+	text-shadow: 1.5px 1.5px #87c3c3;
+}
+
+#blog ul li a {
+	color: #ecebe6;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+#performancehome a{
+	color: #2f2f2f;
+}
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+
+
 #bandcamp{
  position: fixed;
  right: 10px;
@@ -483,15 +531,14 @@ table {
 
 
 
-
 .performancehead {
 	max-width: 100%; 
 	padding: 0px;
 	margin: 0px;
 	z-index: -999;
 }
-.performancehead figure {
-	z-index: -99999999;
+.performancehead figure, .main figure {
+		z-index: -99999999;
 	max-width: 100%;
 	padding: 0px;
 	margin: 0px;
@@ -504,6 +551,8 @@ table {
 	max-width: 1200px;
 	margin: 0 auto;
 	box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+
+
 }
 
 .performancehead figcaption {
@@ -527,6 +576,15 @@ table {
 	font-weight: 400;
 }
 
+.main figcaption {
+	max-width: 100%;
+	position: absolute; 
+	bottom: 0px;
+	padding: 1.8em;
+	color: #ecebe6;
+}
+
+
 
 .main-navigation {
 	float: right;
@@ -546,17 +604,14 @@ footer {
 
 }
 
-footer img {
-	width: 25%;
 
-}
 
 
 
 footer ul {
 	margin: 0 auto;
-	padding-left: 175px;
-	padding-top: 20px;
+	max-width: 1200px;
+	padding: 40px 0px 40px 400px;
 	box-sizing: border-box;
 	list-style: none;
 	text-align: center;
@@ -567,15 +622,71 @@ footer li {
 	float: left;
 	box-sizing: border-box;
 	max-width: 33.3%;
-}
-
-footer li a {
 
 }
 
-footer h3 {
+footer img {
+	height: 40px;
+	padding-right: 50px;
+}
+
+
+#performancehome {
+	z-index: 9999px;
+	clear: both; 
+	background-color: #cfb986;
+	margin-top: -40px;
+	padding: 40px 200px;
 	text-align: center;
+	clear: both;
+
 }
+
+/*--------------------------------------------------------------
+# Blog Query
+--------------------------------------------------------------*/
+
+#blog {
+	color: #ecebe6;
+	background-color: #7cae89;
+	-webkit-box-sizing: border-box; 
+  	-moz-box-sizing: border-box;   
+  	box-sizing: border-box;     
+
+}
+
+#blog ul {
+	background-color: #7cae89;
+	list-style-type: none;
+	padding: 0px;
+	margin: -20px -2px 0px 0px;
+}
+
+#blog ul li {
+	background-color: #7cae89;
+	float: left;
+	max-width: 33.3%;
+	padding: 45px;
+	max-height: 500px;
+
+	}
+	
+#blog h4 {
+	padding: 50px 0px 40px 0px;
+	margin: 0px;
+
+}
+#blog img {
+	margin-left: 60px;
+	margin-top: 20px;
+}
+
+
+/*--------------------------------------------------------------
+# Performance Listing
+--------------------------------------------------------------*/
+
+
 
 
 /*--------------------------------------------------------------
@@ -658,17 +769,17 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #28767a;
 }
 
 a:visited {
-	color: purple;
+	color: #87c3c3;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #7cae89;
 }
 
 a:focus {
