@@ -22,7 +22,7 @@ define('DB_NAME', 'jmur_srazhalys_db');
 define('DB_USER', 'jmurwptestadmin');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'LKeS0q*1546');
+define('DB_PASSWORD', 'LKeSOq*1546');
 
 /** MySQL hostname */
 define('DB_HOST', 'mysql.jennadeemurphy.com');
