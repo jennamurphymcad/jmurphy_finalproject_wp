@@ -78,11 +78,23 @@ function srazhalys_setup() {
 endif; // srazhalys_setup
 add_action( 'after_setup_theme', 'srazhalys_setup' );
 
+
+
+function new_excerpt_more( $more ) {
+	return ' <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'your-text-domain' ) . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+
+
 /**
  * Register widget area.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
+
+
+
 function srazhalys_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', 'srazhalys' ),
