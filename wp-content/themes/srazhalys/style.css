@@ -361,6 +361,7 @@ body {
 	padding: 100px 200px; 
 	color: #2f2f2f;
 	margin-top: -5px;
+	background-color: #f2f2f2;
 }
 .main #intro h3 {
 	color: #2f2f2f;
@@ -368,7 +369,7 @@ body {
 }
 
 .main h4 {
-	font-size: 1.5em;
+	font-size: 1.8em;
 	text-align: Center;
 }
 
@@ -396,12 +397,8 @@ footer h3 {
 #blog ul li a {
 	color: #ecebe6;
 	text-decoration: none;
-	font-size: 1.2rem;
 }
 
-#performancehome a{
-	color: #2f2f2f;
-}
 
 /*--------------------------------------------------------------
 # Elements
@@ -419,6 +416,7 @@ footer h3 {
 
 html {
 	box-sizing: border-box;
+	background-color: #ecebe6;
 	
 }
 
@@ -428,9 +426,6 @@ html {
 	box-sizing: inherit;
 }
 
-body {
-	background: #ecebe6; 
-}
 
 blockquote:before,
 blockquote:after,
@@ -488,6 +483,7 @@ table {
 	width: 100%;
 }
 
+
 #masthead img {
 	height: 60px;
 	width: 50px;
@@ -502,9 +498,10 @@ table {
 }
 
 #masthead {
+	z-index: 999999999999999999999999999999999999999;
 	background-color: #FFF;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	z-index: 99999;
+	
 }
 
 
@@ -513,14 +510,16 @@ table {
 #performancecolumn1 {
 	float: left; 
 	max-width: 50%;
-	padding: 20px;
+	padding: 141px 20px;
+	max-height: 650px;
 }
 
 
 #performancecolumn2 {
 	float: right;
 	max-width: 50%;
-	padding: 45px;
+	padding: 46px;
+	max-height: 650px;
 
 }
 
@@ -530,30 +529,28 @@ table {
 }
 
 
-
 .performancehead {
 	max-width: 100%; 
 	padding: 0px;
 	margin: 0px;
-	z-index: -999;
 }
 .performancehead figure, .main figure {
-		z-index: -99999999;
+	
 	max-width: 100%;
 	padding: 0px;
 	margin: 0px;
 	position: relative;
 	clear: both;
 	margin-bottom: -1px;
+	z-index: -9;
 }
 
 .site-content {
 	max-width: 1200px;
 	margin: 0 auto;
 	box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
-
-
 }
+
 
 .performancehead figcaption {
 	max-width: 100%;
@@ -576,6 +573,12 @@ table {
 	font-weight: 400;
 }
 
+.performancecontent, #performancecolumn1, #performancecolumn2 {
+	background-color: #f2f2f2;
+	margin-top: -5px;
+	
+}
+
 .main figcaption {
 	max-width: 100%;
 	position: absolute; 
@@ -589,7 +592,7 @@ table {
 .main-navigation {
 	float: right;
 	max-width: 75%
-	z-index: 999px;
+	z-index: 999;
 	font-family: 'Comfortaa', sans-serif;
 	font-weight: 500;
 }
@@ -597,7 +600,6 @@ table {
 footer {
 	background: #fff;
 	padding: 1em;
-	border-top: 1px solid rgba(0, 0, 0, 0.2);
 	clear: both;
 	box-sizing: border-box;
 	max-width: 100%;
@@ -631,15 +633,16 @@ footer img {
 }
 
 
-#performancehome {
-	z-index: 9999px;
-	clear: both; 
-	background-color: #cfb986;
-	margin-top: -40px;
-	padding: 40px 200px;
-	text-align: center;
-	clear: both;
-
+footer img:hover { 
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	-webkit-transform: rotate(360deg); 
+	-moz-transform: rotate(360deg); 
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg); 
 }
 
 /*--------------------------------------------------------------
@@ -667,27 +670,68 @@ footer img {
 	float: left;
 	max-width: 33.3%;
 	padding: 45px;
-	max-height: 500px;
+	max-height: 535px;
 
 	}
 	
 #blog h4 {
-	padding: 50px 0px 40px 0px;
-	margin: 0px;
+	padding: 40px 0px 20px 0px;
+	margin: 0;
+	color: #2f2f2f;
 
 }
 #blog img {
 	margin-left: 60px;
-	margin-top: 20px;
 }
 
+#blog li h5 {
+	font-family: 'Comfortaa', sans-serif;
+	text-align: center;
+	font-size: 1.3em;
+	padding: 0px;
+	margin-top: -5px;
+	font-weight: 400;
+}
 
+#blog .content a {
+	text-decoration: underline;
+
+
+}
 /*--------------------------------------------------------------
-# Performance Listing
+# Performance home
 --------------------------------------------------------------*/
 
 
+#performancehome {
+	z-index: 9999px;
+	clear: both; 
+	background-color: #cfb986;
+	margin-top: -40px;
+	padding: 40px 200px;
+	text-align: center;
+	clear: both;
+	
 
+}
+
+#performancehome p {
+	margin: 0px;
+}
+
+#performancehome p:nth-child(3) {
+	padding-bottom: 20px;
+}
+
+#performancehome ul {
+	list-style-type: none;
+}
+
+#performancehome a {
+	font-size: 1.3em;
+	font-family: 'Comfortaa', sans-serif;
+	font-weight: 400;
+}
 
 /*--------------------------------------------------------------
 # Forms
@@ -769,17 +813,24 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #28767a;
+	color: #2f2f2f;
+	text-decoration: underline;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	transition: all 0.5s linear;
 }
 
 a:visited {
-	color: #87c3c3;
+	color: #2f2f2f;
 }
 
 a:hover,
 a:focus,
-a:active {
-	color: #7cae89;
+a:active,
+#blog a:hover {
+	color: #dd5650;
 }
 
 a:focus {
@@ -821,18 +872,25 @@ a:active {
 	color: #2f2f2f;
 	display: block;
 	text-decoration: none;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	transition: all 0.2s linear;
 }
 
 .main-navigation ul ul {
+	background-color: #fff;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
 	top: 1.4em;
 	left: -999em;
-	z-index: 99999;
+	z-index: 999999999999999999;
 }
 
 .main-navigation ul ul ul {
+	background-color: #fff;
 	left: -999em;
 	top: 0;
 }
@@ -845,33 +903,43 @@ a:active {
 
 }
 
+.main-navigation:hover li a{
+	text-shadow: 0px 0px 3px #2f2f2f;
+	color: transparent;
+}
+
+.main-navigation li a:hover{
+
+}
+
+
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
-	color: #28767a;
+	color: #2f2f2f;
 }
 
 .main-navigation ul ul :hover > a,
 .main-navigation ul ul .focus > a {
-	color: #28767a;
+
 	z-index: 9999px;
 	
 }
 
 .main-navigation ul ul a:hover,
 .main-navigation ul ul a.focus {
-	background-color: #fff;
+
 }
 
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
-	background-color: #fff;
+
 	margin-top: 30px;
 	left: auto;
 }
 
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
-	background-color: #fff;
+
 	left: 100%;
 }
 
